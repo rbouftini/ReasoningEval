@@ -228,7 +228,7 @@ async def main():
     print(f"From the generated incorrect solutions, {avg_incorrect_generations}% are really incorrect")
 
     print("The model to evaluate is:", args.model)
-    results = await evaluate(problems[:2], args.model, client)
+    results = await evaluate(problems, args.model, client)
 
     file_name = "evaluation_" + args.model + ".jsonl"
     with open(file_name, "w") as file:
