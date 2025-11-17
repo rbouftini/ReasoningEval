@@ -8,12 +8,13 @@ To avoid a hackable evaluation where the evaluated LLM will never agree with the
 
 # Results
 
-<p>
-  <img src="https://github.com/rbouftini/ReasoningEval/blob/main/imgs/evaluation.png?raw=true" alt="Fig" width="50%"/>
+<div align="center">
+  <img src="https://github.com/rbouftini/ReasoningEval/blob/main/imgs/evaluation.png?raw=true" alt="Fig" width="60%"/>
+  <br/>
   <em>
     Benchmarking LLM reasoning with an outcome-based evaluation (correctness of the final result) vs. the debate-like approach presented.
   </em>
-</p>
+</div>
 
 ## Getting Started
 
@@ -24,15 +25,17 @@ To avoid a hackable evaluation where the evaluated LLM will never agree with the
    ```
 
 2. **Run Evaluation**
+
    For now, evaluation only supports OpenAI models available through the API.
 
    * **Export your OpenAI API key**
-
+     
    ```bash
    echo "OPENAI_API_KEY=YOUR_OPENAI_API_KEY" > .env  
    ```
 
-   * **Evaluate**
+   * **Run Script**
+
    Execute `eval.py` to evaluate a supported model. For example:
 
    ```bash
