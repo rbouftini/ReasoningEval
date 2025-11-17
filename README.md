@@ -29,6 +29,7 @@ To avoid a hackable evaluation where the evaluated LLM will never agree with the
    For now, evaluation only supports OpenAI models available through the API.
 
    * **Export your OpenAI API key**
+  
      
    ```bash
    echo "OPENAI_API_KEY=YOUR_OPENAI_API_KEY" > .env  
